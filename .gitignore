@@ -66,4 +66,9 @@ build-iPhoneSimulator/
 *.un~
 capybara-*.html
 
+# Kubernetes
 /kube/**/*.yml
+
+# Authz
+authz_umichlib_ignore/
+
