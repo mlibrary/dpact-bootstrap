@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dpact:
+    build: .
+    volumes:
+      - .:/dpact
+      - gem_cache:/gems
+    env_file:
+      - .env
+
+volumes:
+  gem_cache:
