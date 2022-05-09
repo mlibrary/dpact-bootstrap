@@ -66,3 +66,4 @@ build-iPhoneSimulator/
 *.un~
 capybara-*.html
 
+/kube/**/*.yml
