@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: $YML_MY_APP
+  name: $YML_MY_NAME
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: $YML_MY_APP
+  template:
+    metadata:
+      annotations:
+        imageregistry: "https://ghcr.io"
+      labels:
+        app: $YML_MY_APP
+    spec:
+      imagePullSecrets:
+        - name: github-packages-read
+      containers:
+        - name: $YML_MY_NAME
+          image: ghcr.io/${GITHUB_USER}/apache-m1:latest
