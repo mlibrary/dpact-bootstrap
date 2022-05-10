@@ -1,4 +1,5 @@
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
+[![CI](https://github.com/mlibrary/dpact-bootstrap/actions/workflows/ci.yml/badge.svg)](https://github.com/mlibrary/dpact-bootstrap/actions/workflows/ci.yml)
 
 # Digital Preservation and Access Component Technologies (DPACT) Bootstrap
 

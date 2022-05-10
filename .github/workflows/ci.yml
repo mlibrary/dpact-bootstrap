@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  ENV_GKOSTIN: 1
+  TESTBED: 1
 
 jobs:
   ci:
@@ -16,14 +16,13 @@ jobs:
     strategy:
       matrix:
         ruby-version: ['2.6', '2.7', '3.0']
+
     services:
       apache:
         image: ghcr.io/mlibrary/dpact-bootstrap/apache:latest
-        env:
-	  ENV_GKOSTIN: 1
         ports:
           - 8080:8080/tcp
-          - 8443:8443/tcp
+
     steps:
       - uses: actions/checkout@v2
       - name: Set up Ruby
