@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  apache:
+    build: .
+    volumes:
+      - ./app:/app
+      - ./modules:/dpact

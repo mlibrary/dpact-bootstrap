@@ -8,6 +8,9 @@ Digital Preservation and Access Component Technologies (DPACT) is a strategic in
 Bootstrap is simply a repository to get the ball rolling.  A central location to dump files to be shared amoungst the team and a place to explore BDD using Ruby and Cucumber.  
 
 ## Installation
+```bash
+git clone https://github.com/mlibrary/dpact-bootstrap.git
+```
 
 ## Usage
 ### Build
